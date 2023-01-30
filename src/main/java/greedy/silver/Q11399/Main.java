@@ -1,4 +1,4 @@
-package greedy.Q11399;
+package greedy.silver.Q11399;
 
 import java.util.Arrays;
 import java.util.Scanner;

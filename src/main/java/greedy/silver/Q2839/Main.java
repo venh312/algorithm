@@ -1,4 +1,4 @@
-package greedy.Q2839;
+package greedy.silver.Q2839;
 
 import java.util.Scanner;
 
