@@ -1,4 +1,4 @@
-package greedy.Q5585;
+package greedy.bronze.Q5585;
 
 import java.util.Scanner;
 
