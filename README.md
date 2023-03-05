@@ -1,4 +1,3 @@
-# alg-baek
 ### ✍ Algorithm study with Baekjoon
 
 - 그리디
