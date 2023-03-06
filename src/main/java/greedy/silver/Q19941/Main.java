@@ -26,7 +26,7 @@ public class Main {
                 int start = Math.max(i-k, 0);
                 int end = Math.min(i+k, n-1);
                 for (int j = start; j <= end; j++) {
-                    if(h[j] == 1 && !visited[j]){
+                    if (h[j] == 1 && !visited[j]) {
                         visited[j] = true;
                         answer++;
                         break;
