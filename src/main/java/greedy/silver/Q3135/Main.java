@@ -13,11 +13,8 @@ public class Main {
         int b = Integer.parseInt(st.nextToken());
         int n = Integer.parseInt(br.readLine());
         int answer = Math.abs(a-b);
-        int[] arr = new int[n];
         for (int i = 0; i < n; i++)
-            arr[i] = Integer.parseInt(br.readLine());
-        for (int v : arr)
-            answer = Math.min(answer, Math.abs(v - b) + 1);
+            answer = Math.min(answer, Math.abs(Integer.parseInt(br.readLine()) - b) + 1);
         System.out.println(answer);
     }
 }
