@@ -21,7 +21,7 @@ public class Main {
 
         int normal_cnt = 0;
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++){
+            for (int j = 0; j < n; j++) {
                 if (!visited[i][j]) {
                     dfs(i,j);
                     normal_cnt++;
