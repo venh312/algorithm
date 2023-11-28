@@ -1,3 +1,4 @@
+package dp.Q11053;
 import java.util.Scanner;
 
 public class Main {

@@ -1,6 +1,6 @@
+package dp.Q9184;
 import java.io.*;
 import java.util.StringTokenizer;
-
 public class Main {
     static int[][][] dp = new int[100][100][100];
     static int w(int a, int b, int c) {

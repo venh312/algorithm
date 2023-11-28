@@ -1,3 +1,4 @@
+package etc.Q1152;
 import java.io.*;
 import java.util.Arrays;
 public class Main {

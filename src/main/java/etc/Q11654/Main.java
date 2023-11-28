@@ -1,3 +1,4 @@
+package etc.Q11654;
 import java.util.Scanner;
 
 public class Main {
