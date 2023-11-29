@@ -1,4 +1,4 @@
-packacge graph.Q2178;
+package graph.Q2178;
 
 import java.io.BufferedReader;
 import java.io.IOException;
