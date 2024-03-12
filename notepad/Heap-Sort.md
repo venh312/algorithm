@@ -13,47 +13,47 @@ public class HeapSort {
     public void heapSort(int arr[]) {
         int n = arr.length;
 
-        // Build heap (rearrange array)
+        // 힙 구조를 만듭니다 (배열 재배치)
         for (int i = n / 2 - 1; i >= 0; i--)
             heapify(arr, n, i);
 
-        // One by one extract an element from heap
+        // 힙에서 하나씩 요소를 추출합니다
         for (int i = n - 1; i > 0; i--) {
-            // Move current root to end
+            // 현재 루트를 끝으로 이동합니다
             int temp = arr[0];
             arr[0] = arr[i];
             arr[i] = temp;
 
-            // call max heapify on the reduced heap
+            // 줄어든 힙에 대해 max heapify를 호출합니다
             heapify(arr, i, 0);
         }
     }
 
     void heapify(int arr[], int n, int i) {
-        int largest = i; // Initialize largest as root
+        int largest = i; // largest를 루트로 초기화합니다
         int left = 2 * i + 1; // left = 2*i + 1
         int right = 2 * i + 2; // right = 2*i + 2
 
-        // If left child is larger than root
+        // 왼쪽 자식이 루트보다 크면
         if (left < n && arr[left] > arr[largest])
             largest = left;
 
-        // If right child is larger than largest so far
+        // 지금까지 가장 큰 값보다 오른쪽 자식이 크면
         if (right < n && arr[right] > arr[largest])
             largest = right;
 
-        // If largest is not root
+        // largest가 루트가 아니라면
         if (largest != i) {
             int swap = arr[i];
             arr[i] = arr[largest];
             arr[largest] = swap;
 
-            // Recursively heapify the affected sub-tree
+            // 영향을 받은 서브 트리를 재귀적으로 heapify합니다
             heapify(arr, n, largest);
         }
     }
 
-    // Print array
+    // 배열을 출력합니다
     static void printArray(int arr[]) {
         int n = arr.length;
         for (int i = 0; i < n; ++i)
@@ -61,7 +61,7 @@ public class HeapSort {
         System.out.println();
     }
 
-    // Driver code
+    // 실행 코드
     public static void main(String args[]) {
         int arr[] = {12, 11, 13, 5, 6, 7};
         int n = arr.length;
@@ -69,7 +69,7 @@ public class HeapSort {
         HeapSort ob = new HeapSort();
         ob.heapSort(arr);
 
-        System.out.println("Sorted array is");
+        System.out.println("정렬된 배열:");
         printArray(arr);
     }
 }
