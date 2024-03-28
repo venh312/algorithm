@@ -1,8 +1,12 @@
-package leetcode.learn;
+package leetcode.learn.array;
 
 public class MountainArray {
     public static void main(String[] args) {
         int[] arr = {0,3,2,1};
+        MountainArray(arr);
+    }
+
+    static boolean MountainArray(int[] arr) {
         int n = arr.length;
         int i = 0;
 
