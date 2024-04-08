@@ -1,3 +1,4 @@
+package leetcode.problems;
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -13,7 +14,7 @@ Given the head of a sorted linked list, delete all duplicates such that each ele
 Example 1:
 Input: head = [1,1,2]
 Output: [1,2]
- */
+*/
 public class DeleteDuplicates {
     public ListNode deleteDuplicates(ListNode head) {
         if (head == null || head.next == null)
