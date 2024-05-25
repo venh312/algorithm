@@ -1,4 +1,14 @@
 import java.util.*;
+
+/*
+https://school.programmers.co.kr/learn/challenges?order=recent&partIds=58464
+
+가장 많이 받은 선물
+2024 KAKAO WINTER INTERNSHIP
+
+난이도	완료한 사람	정답률
+Lv. 1	6,627명	    24%
+*/
 class Solution {
     public int solution(String[] friends, String[] gifts) {
         int answer = 0;
