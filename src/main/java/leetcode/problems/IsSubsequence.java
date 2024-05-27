@@ -14,6 +14,7 @@ Input: s = "axc", t = "ahbgdc"
 Output: false
 */
 class IsSubsequence {
+    // Runtime: 2 ms, faster than 62.17%
     public boolean isSubsequence(String s, String t) {
         if (s.length() == 0) return true;
 
