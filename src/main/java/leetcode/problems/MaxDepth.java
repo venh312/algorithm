@@ -1,0 +1,33 @@
+package leetcode.problems;
+
+/*
+Given a n-ary tree, find its maximum depth.
+The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
+Nary-Tree input serialization is represented in their level order traversal, each group of children is separated by the null value (See examples).
+
+Example 1:
+Input: root = [1,null,3,2,4,null,5,6]
+Output: 3
+
+Example 2:
+Input: root = [1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]
+Output: 5
+*/
+class MaxDepth {
+    int result = 1;
+    // Runtime: 0 ms, faster than 100.00%
+    public int maxDepth(Node root) {
+        if (root == null) return 0;
+        getMaximumDepth(root, 1);
+        return result;
+    }
+    
+    public void getMaximumDepth(Node root, int depth) {
+        if (root == null || root.children.size() == 0) return;
+        depth++;
+        result = Math.max(result, depth);
+        for (Node node : root.children) {
+            getMaximumDepth(node, depth);
+        }
+    }
+}
