@@ -9,9 +9,4 @@
 문자열 s의 길이 : 100,000 이하의 자연수
 문자열 s는 '(' 또는 ')' 로만 이루어져 있습니다.
 
-### 입출력 예
-s	answer
-"()()"	true
-"(())()"	true
-")()("	false
-"(()("	false
+<img width="190" alt="스크린샷 2024-07-21 오후 1 41 49" src="https://github.com/user-attachments/assets/016ebf3f-8711-4cf9-81a8-7109b148002d">
