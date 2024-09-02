@@ -1,3 +1,36 @@
+/**
+ The string "PAYPALISHIRING" is written in a
+ zigzag pattern on a given number of rows like
+ this: (you may want to display this pattern in a fixed font for better legibility)
+ 문자열 "PAYPALISHIRING"은 다음과 같이 주어진 수의 행에 지그재그 패턴으로 작성됩니다.
+ (더 잘 읽기 위해 이 패턴을 고정된 글꼴로 표시하는 것이 좋습니다.)
+
+ P      A     H    N
+ A  P  L  S  I  I  G
+ Y      I      R
+ And then read line by line: "PAHNAPLSIIGYIR"
+ Write the code that will take a string and make this conversion given a number of rows:
+
+ 그리고 "PHNAPLSSIIGYIR"을 한 줄 한 줄 읽어보세요
+ 문자열을 사용할 코드를 작성하고 몇 개의 행이 주어지면 이 변환을 수행합니다:
+
+ Example 1:
+ Input: s = "PAYPALISHIRING", numRows = 3
+ Output: "PAHNAPLSIIGYIR"
+
+ Example 2:
+ Input: s = "PAYPALISHIRING", numRows = 4
+ Output: "PINALSIGYAHRPI"
+ Explanation:
+ P             I           N
+ A        L   S       I  G
+ Y   A       H   R
+ P             I
+
+ Example 3:
+ Input: s = "A", numRows = 1
+ Output: "A"
+*/
 class Convert {
     public String convert(String s, int numRows) {
          // 예외 처리
