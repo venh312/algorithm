@@ -10,6 +10,12 @@
 
 ```java
 public class QuickSort {
+    public void swap(int[] arr, int a, int b) {
+        int temp = arr[a];
+        arr[a] = arr[b];
+        arr[b] = temp;
+    }
+
     public void quickSort(int arr[], int low, int high) {
         if (low < high) {
             // pi는 파티션의 분할 지점
@@ -30,16 +36,12 @@ public class QuickSort {
             // 현재 요소가 피벗보다 작으면 작은 요소들을 swap
             if (arr[j] < pivot) {
                 i++;
-                int temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
+                swap(arr, i, j);
             }
         }
 
         // 피벗과 i+1 위치의 요소 교환 (피벗의 최종 위치 설정)
-        int temp = arr[i + 1];
-        arr[i + 1] = arr[high];
-        arr[high] = temp;
+        swap(arr, i+1, high);
 
         return i + 1; // 파티션의 분할 지점을 반환
     }
