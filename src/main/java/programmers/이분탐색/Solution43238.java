@@ -1,5 +1,5 @@
 // https://school.programmers.co.kr/learn/courses/30/lessons/43238?language=java
-class Solution43238 {
+class Solution_43238 {
     public long solution(int n, int[] times) {
         long low = 1;  // 최소 시간은 1분
         long high = (long) n * times[times.length - 1];  // 최대 시간은 가장 느린 심사관이 모든 사람을 처리할 때
