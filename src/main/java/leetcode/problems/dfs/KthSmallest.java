@@ -28,27 +28,4 @@ class KthSmallest {
         
         inorder(root.right, k);
     }
-
-
-    private int result = 0;
-    private int count = 0;
-
-    public int kthSmallestGPT(TreeNode root, int k) {
-        inorder(root, k);
-        return result;
-    }
-
-    void inorderGPT(TreeNode root, int k) {
-        if (root == null) return;
-        
-        inorderGPT(root.left, k);
-
-        count++;
-        if (count == k) {
-            result = root.val;
-            return;
-        }
-        
-        inorderGPT(root.right, k);
-    }
 }
