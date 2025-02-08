@@ -42,6 +42,8 @@ class GetRandom {
     }
     
     public int getRandom() {
+        /*
+        내부적으로 의사 난수 생성기(PRNG)를 사용하여 균등하게 분포된 정수를 반환 */
         int randomIndex = rand.nextInt(size); // 0부터 list.size()-1 사이의 임의의 인덱스 선택
         return list.get(randomIndex);
     }
